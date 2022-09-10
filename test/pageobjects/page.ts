@@ -8,6 +8,11 @@ export default class Page {
     * @param path path of the sub page (e.g. /path/to/page.html)
     */
     public open (path: string) {
-        return browser.url(`https://the-internet.herokuapp.com/${path}`)
+        return browser.url(`https://cloudinary.com/users/${path}`)
+    }
+
+    // pause for seconds 
+    public async waitForSeconds(seconds : number){
+        await browser.pause(seconds * 1000);
     }
 }
