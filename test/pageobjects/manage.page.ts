@@ -15,9 +15,8 @@ class ManagePage extends Page{
         await (await this.manageTopBar).waitForDisplayed();
     }
 
-    public async assertHomeAssignmentTitle(){
-        //await (await this.imgTitle).waitForDisplayed();
-        await expect(this.imgTitle).toHaveValueContaining('Home assignment');
+    public async verifyImgTitle(title : string){
+        await expect(this.imgTitle).toHaveValueContaining(title);
     }
 }
 
