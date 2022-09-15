@@ -59,7 +59,7 @@ describe('Upload an image from PC and verify the public ID', () => {
         //Enter Public Id
         await UploadPopUp.enterPublicId('123456789');
         //Upload an image from PC
-        await UploadPopUp.uploadImg('/Users/dimaabbas/Documents/Cloudinary-Logo.png');
+        await UploadPopUp.uploadImg('Cloudinary-Logo.png');
         await MediaLibrary.waitForSeconds(2);
 
         await MediaLibrary.switchToMediaFrame();
